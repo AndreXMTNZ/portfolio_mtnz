@@ -1,5 +1,5 @@
 /*==================== GOOGLE FONTS ====================*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 /*==================== VARIABLES CSS ====================*/
 :root {
@@ -551,6 +551,18 @@ img{
 
 .skills__photoshop{
     width: 50%;
+}
+
+.skills__eac{
+    width: 95%;
+}
+
+.skills__dec{
+    width: 85%;
+}
+
+.skills__bsc{
+    width: 75%;
 }
 
 .skills__close .skills__list{
