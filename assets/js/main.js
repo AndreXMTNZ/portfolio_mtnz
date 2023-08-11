@@ -91,6 +91,27 @@ const scrollActive = () =>{
 }
 window.addEventListener('scroll', scrollActive)
 
+/*=============== EMAIL JS =====================*/
+
+const contactForm = document.getElementById('contact-form'),
+    contactMessage = document.getElementById('contact-message')
+
+const sendEmail = (e) =>{
+    e.preventDefault()
+
+    //serviceID - templateID - #form - publicKey
+    emailjs.sendForm('service_1zdxpme', 'template_dr1cf4h', '#contact-form', 'Rhybzh2LoSglmjtpm')
+        .then(() =>{
+            contactMessage.textContent = 'Mensaje enviado ✅'
+        }, () =>{
+            //Show error message
+            contactMessage.textContent = 'Mensaje no enviado (error del servicio) 🛑'
+        })
+}
+
+contactForm.addEventListener('submit', sendEmail)
+
+
 /*=============== LIGHT DARK THEME ===============*/ 
 const themeButton = document.getElementById('theme-button')
 const lightTheme = 'light-theme'

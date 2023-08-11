@@ -688,9 +688,9 @@
                             <div class="contact__card">
                                 <i class='bx bxl-whatsapp contact__card-icon' ></i>
                                 <h3 class="contact__card-title">Whatsapp</h3>
-                                <span class="contact__card-data">+503 xxxx-xxxx</span>
+                                <span class="contact__card-data">+503 6163-0930</span>
 
-                                <a href="#" target="_blank" class="contact__button">
+                                <a href="https://api.whatsapp.com/send?phone=50361630930&text=%C2%A1%C2%A1Necesito%20cotizar%20una%20web%20de%20para:%20" target="_blank" class="contact__button">
                                     Write Me <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
                                 </a>
                             </div>
@@ -710,36 +710,36 @@
                     <div class="contact__content">
                         <h3 class="contact__title">Write me your project</h3>
 
-                        <form action="" class="contact__form">
-                            <div class="contact__form-div">
-                                <label for="" class="contact__form-tag">Names</label>
-                                <input type="text" placeholder="Insert your name" class="contact__form-input">
+                        <form action="" class="contact__form" id="contact-form">
+                            <div class="contact__inputs">
+
+                                <div class="contact__form-div contact__content">
+                                    <input type="text" name="user_name" required placeholder="Insert your name" class="contact__form-input">
+                                    <label for="" class="contact__form-tag contact__label">Names</label>                                    
+                                </div>
+
+                                <div class="contact__form-div contact__content">    
+                                    <input type="email" name="user_email" required placeholder="Insert your email" class="contact__form-input">
+                                    <label for="" class="contact__form-tag contact__label">Email</label>
+                                </div>
+
+                                <div class="contact__form-div contact__form-area">
+                                    <label for="" class="contact__form-tag contact__label">Project</label>
+                                    <textarea name="user_project" required cols="30" rows="10" placeholder="Write your project" class="contact__form-input"></textarea>
+                                </div>
                             </div>
 
-                            <div class="contact__form-div">
-                                <label for="" class="contact__form-tag">Email</label>
-                                <input type="email" placeholder="Insert your email" class="contact__form-input">
+                            <div class="button__mailto">
+                                <p class="contact__message" id="contact-message"></p>
+
+                                <button type="submit" class="button contact__button">
+                                    Send Mesage
+                                </button>
                             </div>
-
-                            <div class="contact__form-div contact__form-area">
-                                <label for="" class="contact__form-tag">Project</label>
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Write your project" class="contact__form-input"></textarea>
-                            </div>
-
-                            <!--<a href="mailto:andres04m@outlook.com" target="_blank" style="text-decoration: none; color:var(--body-color);">
-                            <button class="button">
-                                Send Mesage
-                            </button>
-                            </a>-->
-
-                            <button class="button">
-                                <a href="mailto:andres04m@outlook.com" target="_blank" style="text-decoration: none; color:var(--body-color);">Send Mesage</a>
-                            </button>
-                            
                         </form>
                     </div>
                 </div>
-                
+            </section>
         <!--=============== FOOTER ===============-->
         <footer class="footer">
             <div class="footer__container container">
@@ -783,6 +783,9 @@
 
         <!--=============== MIXITUP FILTER ===============-->
         <script src="assets/js/mixitup.min.js"></script>
+
+        <!--============== EMAIL JS =====================-->
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
